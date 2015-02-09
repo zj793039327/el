@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>My First Grid</title>
+
+<link rel="stylesheet" type="text/css" media="screen"
+	href="../../component/jquery/css/ui-lightness/jquery-ui-1.9.2.custom.css" />
+	
+<link rel="stylesheet" type="text/css" media="screen"
+	href="../../component/jqgrid/css/ui.jqgrid.css" />
+<link rel="stylesheet" type="text/css" media="screen"
+	href="../../component/jqgrid/css/jqgrid.css" />
+
+<style type="text/css">
+html,body {
+	margin: 0;
+	padding: 0;
+	font-size: 75%;
+}
+</style>
+
+<script src="../../component/jquery/js/jquery-1.8.3.js"
+	type="text/javascript"></script>
+<script src="../../component/jquery/js/jquery-ui-1.9.2.custom.js"
+	type="text/javascript"></script>
+
+<script src="../../component/jqgrid/js/i18n/grid.locale-cn.js"
+	type="text/javascript"></script>
+<script src="../../component/jqgrid/js/jquery.jqGrid.src.js"
+	type="text/javascript"></script>
+<script src="../../component/jquery/js/jquery.combo.js"
+	type="text/javascript"></script>
+
+<!-- dialog need  此处会重写jquery的dialog哦 -->
+<link rel="stylesheet" type="text/css" media="screen"
+	href="../../css/default.css" />
+<script src="../../component/jquery/js/jquery.dialog.js"
+	type="text/javascript"></script>
+
+
+<!-- combo need -->
+<script src="../../component/jquery/js/jquery.combo.js"
+	type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" media="screen"
+	href="../../css/ui.css" />
+
+<!-- spinbox need -->
+<script src="../../component/jquery/js/jquery.spinbox.js"
+	type="text/javascript"></script>
+
+<script type="text/javascript">
+	$(function() {
+		initgrid();
+		initCombo();
+		initSpinBox();
+		$("div[id=dbtn]").button().click(function(event) {
+			initdialog();
+		});
+		$("#dlog").dialog();
+	});
+	
+
+	function initSpinBox(){
+		$('#spin').spinbox({min: 0, max: 100, value:10});
+	}
+	function initCombo() {
+		$("#combo").combo({
+			data : [ {'text' : 'Hello','value' : '1'},
+			         {'text' : 'World','value' : '2'} ],
+			width : 100,
+			callback : {
+				onChange : function(data) {
+					alert("data changed text:" + data.value
+							+ " value:" + data.text);
+				},
+				onFocus : function() {
+					alert("focus:" + data.value + " value:"
+							+ data.text);
+				},
+				onExpand : function() {
+					alert("onExpand:");
+				},
+				onCollapse : function() {
+					alert("onCollapse:");
+				},
+				beforeChange : function(data) {
+					alert("beforeChange:" + data.value
+							+ " value:" + data.text);
+				},
+				onBlur : function(data) {
+					alert("onBlur:");
+				}
+		}
+						});
+	}
+	function initgrid() {
+		$("#list").jqGrid({
+			url : "../test/queryJqgridDemo.action",
+			datatype : "json",
+			mtype : "POST",
+			colNames : [ "姓名", "性别", "地址", "目标", "skypeId", "备注" ],
+			colModel : [ {
+				name : "CName",
+				width : 55
+			}, {
+				name : "NSex",
+				width : 90
+			}, {
+				name : "CAddress",
+				width : 80,
+				align : "right"
+			}, {
+				name : "CTarget",
+				width : 80,
+				align : "right"
+			}, {
+				name : "CSkype",
+				width : 80,
+				align : "right"
+			}, {
+				name : "CComment",
+				width : 150,
+				sortable : false
+			} ],
+			jsonReader : {
+				root : "data.rows",
+				records : "data.totalsize",
+				repeatitems : false,
+				id : "NId"
+			},
+			rowNum : 20000,
+			pager : "#pager",
+			sortname : "CName",
+			sortorder : "desc",
+			viewrecords : true,
+			gridview : true,
+			autoencode : true,
+			caption : "My first grid",
+			autowidth : true,
+			altRows : true,
+			gridview : true
+		});
+	}
+	function initdialog() {
+		$.dialog({
+			title : '选择科目',
+			content : '如果定义了回调函数才会出现相应的按钮',
+			ok : function() {
+				this.title('3秒后自动关闭').time(3);
+				return false;
+			},
+			width : '437px',
+			height : '450px',
+			max : false,
+			min : false,
+			cache : false,
+			cancelVal : '关闭',
+			cancel : true
+		/*为true等价于function(){}*/
+		});
+	}
+</script>
+</head>
+<body>
+	<div style="width:80%;text-align:center;margin-left:10%">
+		<p>this is a normal jqgrid</p>
+		<div id="dataGrid" class="autoGrid">
+		
+		<table id="list" ></table>
+		<div id="pager"></div>
+		</div>
+	</div>
+	<div style="width:80%;text-align:center;margin-left:10%">
+		<p>this is a normal combobox</p>
+		<div id="combo"></div>
+		<div id="spin"></div>
+	</div>
+	<div style="width:80%;text-align:center;margin-left:10%">
+		<p>this is a dialog test</p>
+		<div id="dbtn">lhgDialog</div>
+		<div id="dlog" title="Basic dialog">
+			<p>如果去掉hlgdialog的js,那么这一段文字就会按照jquery样式的展示</p>
+		</div>
+	</div>
+</body>
+</html>

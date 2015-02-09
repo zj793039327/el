@@ -1,0 +1,56 @@
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>登录</title>
+	<!-- Bootstrap -->
+<link href="..\component\bootstrap\css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Theme -->
+<link href="..\component\bootstrap\css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="..\component\google-code-prettify/prettify.css" rel="stylesheet">
+<link href="..\css\login.css" rel="stylesheet">
+<link href="..\component\font-awesome-4.3.0\css\font-awesome.css" rel="stylesheet">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="http://css/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://css/respond.js/1.4.2/respond.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+<![endif]-->
+
+</head>
+<body>
+	<div class="container-fluid">
+    <div class="row">
+        <div class="loginpanel">
+			<i id="loading" class=" fa fa-4x fa-spinner fa-spin bigicon"></i>
+            <h2>
+				<span class="fa fa-quote-left "></span> 登录 <span class="fa fa-quote-right "></span>
+			</h2>
+            <div>
+                <input id="username" type="text" placeholder="登录账号" onkeypress="check_values();">
+                <input id="password" type="password" placeholder="输入密码" onkeypress="check_values();">
+
+				<div class="buttonwrapper">
+					<button id="loginbtn" class="btn btn-warning loginbutton">
+						<span class="fa fa-check"></span>
+					</button>
+					<span id="lockbtn" class="fa fa-lg fa-lock lockbutton redborder"></span>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="..\component\bootstrap\js\jquery-1.11.1.js"></script>
+<script src="..\component\bootstrap\js\bootstrap.js"></script>
+<script src="..\component\google-code-prettify\prettify.js"></script>
+
+<script type="text/javascript" src="..\js\login.js"></script>
+
+</body>
+</html>
