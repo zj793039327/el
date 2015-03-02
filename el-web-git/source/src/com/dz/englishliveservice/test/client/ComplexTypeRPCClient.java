@@ -10,7 +10,7 @@ import org.apache.axis2.rpc.client.RPCServiceClient;
  * Title: <br>
  * Description: <br>
  * Copyright: Copyright (c) 2007<br>
- * Company: 北京紫光华宇软件股份有限公司<br>
+ * Company: 鍖椾含绱厜鍗庡畤杞欢鑲′唤鏈夐檺鍏徃<br>
  * 
  * @author zj
  * @version 1.0
@@ -27,7 +27,7 @@ public class ComplexTypeRPCClient
         options.setTo(targetEPR);
      
 
-        // 下面的代码调用了getArray方法，并返回一维String数组
+        // 涓嬮潰鐨勪唬鐮佽皟鐢ㄤ簡getArray鏂规硶锛屽苟杩斿洖涓�缁碨tring鏁扮粍
         // ///////////////////////////////////////
         QName opAddEntry = new QName("http://firststep.test.englishliveservice.dz.com", "getArray");
         String[] strArray = (String[]) serviceClient.invokeBlocking(opAddEntry,
@@ -38,7 +38,7 @@ public class ComplexTypeRPCClient
         System.out.println();
         // ///////////////////////////////////////
 
-        // 下面的代码调用了getMDArray方法，并返回一维String数组
+        // 涓嬮潰鐨勪唬鐮佽皟鐢ㄤ簡getMDArray鏂规硶锛屽苟杩斿洖涓�缁碨tring鏁扮粍
         // ///////////////////////////////////////
         opAddEntry = new QName("http://firststep.test.englishliveservice.dz.com", "getMDArray");
         strArray = (String[]) serviceClient.invokeBlocking(opAddEntry,
@@ -54,7 +54,7 @@ public class ComplexTypeRPCClient
         System.out.println();
         // ///////////////////////////////////////
 
-        // 下面的代码调用了getDataForm方法，并返回DataForm对象实例
+        // 涓嬮潰鐨勪唬鐮佽皟鐢ㄤ簡getDataForm鏂规硶锛屽苟杩斿洖DataForm瀵硅薄瀹炰緥
         // ///////////////////////////////////////
         opAddEntry = new QName("http://firststep.test.englishliveservice.dz.com", "getDataForm");
         com.dz.englishliveservice.test.bean.DataForm df = (com.dz.englishliveservice.test.bean.DataForm) serviceClient.invokeBlocking(
@@ -63,7 +63,7 @@ public class ComplexTypeRPCClient
         System.out.println(df.getAge());
         // ///////////////////////////////////////
 
-        // 下面的代码调用了getDataFormBytes方法，并返回字节数组，最后将返回的字节数组反序列化后，转换成DataForm对象实例
+        // 涓嬮潰鐨勪唬鐮佽皟鐢ㄤ簡getDataFormBytes鏂规硶锛屽苟杩斿洖瀛楄妭鏁扮粍锛屾渶鍚庡皢杩斿洖鐨勫瓧鑺傛暟缁勫弽搴忓垪鍖栧悗锛岃浆鎹㈡垚DataForm瀵硅薄瀹炰緥
         // ///////////////////////////////////////
         opAddEntry = new QName("http://firststep.test.englishliveservice.dz.com", "getDataFormBytes");
         byte[] buffer = (byte[]) serviceClient.invokeBlocking(opAddEntry,

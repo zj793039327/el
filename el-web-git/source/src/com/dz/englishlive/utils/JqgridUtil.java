@@ -8,10 +8,10 @@ import java.util.Map;
 import net.sf.json.JSONObject;
 
 /**
- * Title: ÓÃÓÚ½«Êı¾İ½øĞĞÕë¶ÔJqgridÀàĞÍµÄ¸ñÊ½»¯ËùÓÃ<br>
+ * Title: ç”¨äºå°†æ•°æ®è¿›è¡Œé’ˆå¯¹Jqgridç±»å‹çš„æ ¼å¼åŒ–æ‰€ç”¨<br>
  * Description: <br>
  * Copyright: Copyright (c) 2007<br>
- * Company: ±±¾©×Ï¹â»ªÓîÈí¼ş¹É·İÓĞÏŞ¹«Ë¾<br>
+ * Company: åŒ—äº¬ç´«å…‰åå®‡è½¯ä»¶è‚¡ä»½æœ‰é™å…¬å¸<br>
  * 
  * @author zj
  * @version 1.0
@@ -20,7 +20,7 @@ import net.sf.json.JSONObject;
 public class JqgridUtil
 {
     /**
-     * ¼òµ¥¸ñÊ½»¯lstData£¬Ã»ÓĞ·ÖÒ³Ò»Ëµ
+     * ç®€å•æ ¼å¼åŒ–lstDataï¼Œæ²¡æœ‰åˆ†é¡µä¸€è¯´
      * 
      * @param lstData
      * @return

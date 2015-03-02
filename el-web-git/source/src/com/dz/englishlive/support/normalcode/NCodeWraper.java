@@ -12,7 +12,7 @@ import com.dz.englishlive.support.normalcode.bean.NCodeType;
  * Title: <br>
  * Description: <br>
  * Copyright: Copyright (c) 2007<br>
- * Company: ±±¾©×Ï¹â»ªÓîÈí¼ş¹É·İÓĞÏŞ¹«Ë¾<br>
+ * Company: åŒ—äº¬ç´«å…‰åå®‡è½¯ä»¶è‚¡ä»½æœ‰é™å…¬å¸<br>
  * 
  * @author zj
  * @version 1.0
@@ -41,7 +41,7 @@ public class NCodeWraper
     }
 
     /**
-     * »ñÈ¡JSON´®
+     * è·å–JSONä¸²
      * 
      * @param type
      * @return

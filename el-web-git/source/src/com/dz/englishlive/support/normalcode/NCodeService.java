@@ -24,7 +24,7 @@ import com.dz.englishlive.support.normalcode.bean.NCodeType;
  * Title: <br>
  * Description: <br>
  * Copyright: Copyright (c) 2007<br>
- * Company: ±±¾©×Ï¹â»ªÓîÈí¼ş¹É·İÓĞÏŞ¹«Ë¾<br>
+ * Company: åŒ—äº¬ç´«å…‰åå®‡è½¯ä»¶è‚¡ä»½æœ‰é™å…¬å¸<br>
  * 
  * @author zj
  * @version 1.0
@@ -42,8 +42,8 @@ public class NCodeService extends ElService
     }
 
     /**
-     * ÔÚBeanÖĞµÄÄ³¸ö·½·¨ÉÏ¼ÓÉÏ@PostConstruct×¢½â£¬Ôò¸Ã·½·¨½«»áÔÚBean³õÊ¼»¯Ö®ºó±»SpringÈİÆ÷µ÷ÓÃ£¬
-     * ×÷ÓÃµÈÍ¬ÔÚSpringÅäÖÃÎÄ¼şÖĞÎªbean±êÇ©Ö¸¶¨init-methodÊôĞÔ
+     * åœ¨Beanä¸­çš„æŸä¸ªæ–¹æ³•ä¸ŠåŠ ä¸Š@PostConstructæ³¨è§£ï¼Œåˆ™è¯¥æ–¹æ³•å°†ä¼šåœ¨Beanåˆå§‹åŒ–ä¹‹åè¢«Springå®¹å™¨è°ƒç”¨ï¼Œ
+     * ä½œç”¨ç­‰åŒåœ¨Springé…ç½®æ–‡ä»¶ä¸­ä¸ºbeanæ ‡ç­¾æŒ‡å®šinit-methodå±æ€§
      */
     @PostConstruct
     private synchronized void init()

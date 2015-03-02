@@ -4,7 +4,7 @@ package com.dz.englishlive.consts;
  * Title: <br>
  * Description: <br>
  * Copyright: Copyright (c) 2007<br>
- * Company: 北京紫光华宇软件股份有限公司<br>
+ * Company: 鍖椾含绱厜鍗庡畤杞欢鑲′唤鏈夐檺鍏徃<br>
  * 
  * @author zj
  * @version 1.0

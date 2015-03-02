@@ -4,24 +4,24 @@ import com.dz.englishliveservice.test.bean.DataForm;
 
 public class ComplexTypeService
 {
-    //  ·µ»ØÒ»Î¬×Ö·û´®Êı×é
+    //  è¿”å›ä¸€ç»´å­—ç¬¦ä¸²æ•°ç»„
     public String[] getArray()
     {
-        String[] strArray = new String[]{ "×ÔĞĞ³µ", "·É»ú", "»ğ¼ı" };
+        String[] strArray = new String[]{ "è‡ªè¡Œè½¦", "é£æœº", "ç«ç®­" };
         return strArray;
     } 
-    //  ·µ»Ø¶şÎ¬×Ö·û´®Êı×é
+    //  è¿”å›äºŒç»´å­—ç¬¦ä¸²æ•°ç»„
     public String[] getMDArray()
     {
-        String[] strArray = new String[]{ "×ÔĞĞ³µ,·É»ú,»ğ¼ı","ÖĞ¹ú,ÃÀ¹ú,µÂ¹ú", "³¬ÈË,Ö©ÖëÏÀ,¸ÖÌúÏÀ" } ;
+        String[] strArray = new String[]{ "è‡ªè¡Œè½¦,é£æœº,ç«ç®­","ä¸­å›½,ç¾å›½,å¾·å›½", "è¶…äºº,èœ˜è››ä¾ ,é’¢é“ä¾ " } ;
         return strArray;
     }
-    //  ·µ»ØDataFormÀàµÄ¶ÔÏóÊµÀı
+    //  è¿”å›DataFormç±»çš„å¯¹è±¡å®ä¾‹
     public DataForm getDataForm()
     {
         return new DataForm();
     }
-    //  ½«DataFormÀàµÄ¶ÔÏóÊµÀıĞòÁĞ»¯£¬²¢·µ»ØĞòÁĞ»¯ºóµÄ×Ö½ÚÊı×é
+    //  å°†DataFormç±»çš„å¯¹è±¡å®ä¾‹åºåˆ—åŒ–ï¼Œå¹¶è¿”å›åºåˆ—åŒ–åçš„å­—èŠ‚æ•°ç»„
     public byte[] getDataFormBytes() throws Exception 
     {
         java.io.ByteArrayOutputStream baos = new java.io.ByteArrayOutputStream();

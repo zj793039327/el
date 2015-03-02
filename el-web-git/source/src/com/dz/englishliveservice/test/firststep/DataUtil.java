@@ -9,7 +9,7 @@ import com.dz.englishliveservice.test.bean.ExamPaper;
  * Title: <br>
  * Description: <br>
  * Copyright: Copyright (c) 2007<br>
- * Company: 北京紫光华宇软件股份有限公司<br>
+ * Company: 鍖椾含绱厜鍗庡畤杞欢鑲′唤鏈夐檺鍏徃<br>
  * 
  * @author zj
  * @version 1.0
@@ -22,17 +22,17 @@ public class DataUtil
         List ans = new ArrayList();
         for (int i = 0; i < 5; i++)
         {
-            ExamPaper paper = new ExamPaper("试卷" + i, "", 120);
+            ExamPaper paper = new ExamPaper("璇曞嵎" + i, "", 120);
             List questions = new ArrayList();
            // paper.setQuestions(questions);
             // for (int j = 0; j < 5; j++)
             // {
-            // ExamQuestion ques = new ExamQuestion("试题" + i + "" + j, "", 1);
+            // ExamQuestion ques = new ExamQuestion("璇曢" + i + "" + j, "", 1);
             // List options = new ArrayList();
             // ques.setOptions(options);
             // for (int l = 0; l < 4; l++)
             // {
-            // QuestionOption op = new QuestionOption(l + "", "选项" + i
+            // QuestionOption op = new QuestionOption(l + "", "閫夐」" + i
             // + "" + j + "" + l);
             // options.add(op);
             // }

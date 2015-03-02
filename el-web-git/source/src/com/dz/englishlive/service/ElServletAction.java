@@ -9,10 +9,10 @@ import org.apache.struts2.interceptor.ServletResponseAware;
 import com.dz.englishlive.action.ElAction;
 
 /**
- * Title: ¿ÉÒÔ»ñÈ¡ reqµÄAction£¬ĞèÒª »ñÈ¡reqÒÔ¼°responseµÄaction ¿ÉÒÔ¼Ì³ĞÕâÒ»¸ö <br>
+ * Title: å¯ä»¥è·å– reqçš„Actionï¼Œéœ€è¦ è·å–reqä»¥åŠresponseçš„action å¯ä»¥ç»§æ‰¿è¿™ä¸€ä¸ª <br>
  * Description: <br>
  * Copyright: Copyright (c) 2007<br>
- * Company: ±±¾©×Ï¹â»ªÓîÈí¼ş¹É·İÓĞÏŞ¹«Ë¾<br>
+ * Company: åŒ—äº¬ç´«å…‰åå®‡è½¯ä»¶è‚¡ä»½æœ‰é™å…¬å¸<br>
  * 
  * @author zj
  * @version 1.0
